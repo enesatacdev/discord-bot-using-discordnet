@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Victoria;
+using Victoria.EventArgs;
 
 namespace CabbariyeBot.Services
 {
@@ -15,26 +17,74 @@ namespace CabbariyeBot.Services
         public static DiscordSocketClient _discord;
         public static CommandService _commands;
         public static IConfigurationRoot _config;
-        public CommandHandler(DiscordSocketClient discord, CommandService commands, IConfigurationRoot config, IServiceProvider provider)
+        public static LavaNode _lavaNode;
+        public CommandHandler(DiscordSocketClient discord, CommandService commands, IConfigurationRoot config, IServiceProvider provider, LavaNode lavanode)
         {
             _provider = provider;
             _config = config;
             _discord = discord;
             _commands = commands;
-
-            _discord.Ready += OnReady;
+            _lavaNode = lavanode;
+            _discord.Ready += OnReadyAsync;
             _discord.MessageReceived += OnMessageReceived;
             _discord.JoinedGuild += OnGuildJoined;
+            _lavaNode.OnTrackEnded += OnTrackEnded;
+        }
+
+        private async Task OnTrackEnded(TrackEndedEventArgs args)
+        {
+            if (!args.Reason.ShouldPlayNext())
+            {
+                return;
+            }
+
+            var player = args.Player;
+            if (!player.Queue.TryDequeue(out var queueable))
+            {
+                await player.TextChannel.SendMessageAsync("Kuyruktaki Parçalar Bitti!");
+                return;
+            }
+
+            if (!(queueable is LavaTrack track))
+            {
+                return;
+            }
+
+            var builder = new EmbedBuilder()
+                    .WithTitle($"Sıradaki Parçaya Geçiliyor")
+                    .WithThumbnailUrl(track.FetchArtworkAsync().ToString())
+                    .AddField("Parça Adı", track.Title, false)
+                    .AddField("Parça Uzunluğu", track.Duration.ToString(), false)
+                    .WithColor(new Color(33, 176, 252));
+            var embed = builder.Build();
+            var message = await args.Player.TextChannel.SendMessageAsync(null, false, embed);
+
+            await args.Player.PlayAsync(track);
+
+           
         }
 
         private async Task OnGuildJoined(SocketGuild arg)
         {
-            await arg.DefaultChannel.SendMessageAsync("Sunucunuza Beni Davet Ettiğiniz için Teşekkür Ederim! Tam Enayiymişsiniz");
+            var builder = new EmbedBuilder()
+                .WithTitle("Merhaba " + arg.Name)
+                .WithDescription("Beni Sunucunuza Davet Ettiğiniz İçin Teşekkür Ederim!")
+                .WithColor(new Color(33, 175, 255));
+            var embed = builder.Build();
+            await arg.DefaultChannel.SendMessageAsync(null,false,embed);
         }
      
+        private async Task OnReadyAsync()
+        {
+            if (!_lavaNode.IsConnected)
+            {
+                await _lavaNode.ConnectAsync();
+            }
+        }
 
         private async Task OnMessageReceived(SocketMessage arg)
         {
+
             if (!(arg is SocketUserMessage message)) return;
             if (message.Source != MessageSource.User) return;
 
@@ -53,18 +103,17 @@ namespace CabbariyeBot.Services
                 if (!result.IsSuccess)
                 {
                     var reason = result.Error;
-
-                    await context.Channel.SendMessageAsync($"Hata ile karşılaşıldı, karşılaşılan hata : \n {reason}");
+                    var builder = new EmbedBuilder()
+                        .WithTitle("Hata İle Karşılaşıldı")
+                        .WithColor(new Color(33,175,255))
+                        .AddField($"Karışılaşılan hata : {reason}", false);
+                    var embed = builder.Build();
+                    await context.Channel.SendMessageAsync(null,false,embed);
                     Console.WriteLine(reason);
                 }
             }
         }
 
-        private Task OnReady()
-        {
-            Console.WriteLine($"{_discord.CurrentUser.Username}#{_discord.CurrentUser.Discriminator} Olarak Bağlandım!");
-            return Task.CompletedTask;
-
-        }
+       
     }
 }

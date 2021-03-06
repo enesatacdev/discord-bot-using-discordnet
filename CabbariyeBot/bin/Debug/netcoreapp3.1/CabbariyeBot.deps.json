@@ -8,13 +8,27 @@
     ".NETCoreApp,Version=v3.1": {
       "CabbariyeBot/1.0.0": {
         "dependencies": {
+          "Discord.Addons.Interactive": "2.0.0",
           "Discord.Net": "2.3.0",
           "Microsoft.Extensions.Configuration": "6.0.0-preview.1.21102.12",
           "Microsoft.Extensions.DependencyInjection": "6.0.0-preview.1.21102.12",
-          "NetEscapades.Configuration.Yaml": "2.1.0"
+          "NetEscapades.Configuration.Yaml": "2.1.0",
+          "Victoria": "5.1.11"
         },
         "runtime": {
           "CabbariyeBot.dll": {}
+        }
+      },
+      "Discord.Addons.Interactive/2.0.0": {
+        "dependencies": {
+          "Discord.Net.Commands": "2.3.0",
+          "Discord.Net.WebSocket": "2.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Discord.Addons.Interactive.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
         }
       },
       "Discord.Net/2.3.0": {
@@ -329,6 +343,18 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "Victoria/5.1.11": {
+        "dependencies": {
+          "Discord.Net.WebSocket": "2.3.0",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0-preview.1.21102.12"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Victoria.dll": {
+            "assemblyVersion": "5.1.11.0",
+            "fileVersion": "5.1.11.0"
+          }
+        }
+      },
       "YamlDotNet/9.1.0": {
         "runtime": {
           "lib/netstandard2.1/YamlDotNet.dll": {
@@ -344,6 +370,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Discord.Addons.Interactive/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j/bkGeDniPuODOOC+3ZpKvLmoG0z1NHSZrVu6bnaUEYd0tMY4TxaIwl36ue7fK9MXrqQc8VcjcDnvM6JX+V6HA==",
+      "path": "discord.addons.interactive/2.0.0",
+      "hashPath": "discord.addons.interactive.2.0.0.nupkg.sha512"
     },
     "Discord.Net/2.3.0": {
       "type": "package",
@@ -589,6 +622,13 @@
       "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "Victoria/5.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jw6pQc3RVzXAk9JN5ft9xMHwyxtwReMTF+Qoaf0KcfkgcdTBERhc/9nF1LGyScC5qQC5ks+b5Xb1EpMprBkB3Q==",
+      "path": "victoria/5.1.11",
+      "hashPath": "victoria.5.1.11.nupkg.sha512"
     },
     "YamlDotNet/9.1.0": {
       "type": "package",

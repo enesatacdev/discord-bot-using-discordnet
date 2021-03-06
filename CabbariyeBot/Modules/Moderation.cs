@@ -17,8 +17,14 @@ namespace CabbariyeBot.Modules
         {
             var messages = await Context.Channel.GetMessagesAsync(silinecekMesajSayisi + 1).FlattenAsync();
             await (Context.Channel as SocketTextChannel).DeleteMessagesAsync(messages);
-            var sohbetMesaji = await Context.Channel.SendMessageAsync("Silinen Mesaj Sayısı : " + messages.Count());
-            await Task.Delay(3500);
+            var builder = new EmbedBuilder()
+                .WithTitle("Sohbet Temizleyici")
+                .AddField(messages.Count() + " mesaj silindi!", false)
+                .AddField("Bu Mesaj Kendini 4 Saniye Sonra Yok Edecek!", false)
+                .WithColor(new Color(33, 176, 252));
+            var embed = builder.Build();
+            var sohbetMesaji = await Context.Channel.SendMessageAsync(null,false,embed);
+            await Task.Delay(4000);
             await sohbetMesaji.DeleteAsync();
         }
     }

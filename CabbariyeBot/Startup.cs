@@ -1,4 +1,5 @@
 ﻿using CabbariyeBot.Services;
+using Discord.Addons.Interactive;
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Victoria;
 
 namespace CabbariyeBot
 {
@@ -52,6 +54,9 @@ namespace CabbariyeBot
                 }))
                 .AddSingleton<CommandHandler>()
                 .AddSingleton<StartupService>()
+                .AddLavaNode(x => {
+                    x.SelfDeaf = true;
+                })
                 .AddSingleton(Configuration);
         }
     }

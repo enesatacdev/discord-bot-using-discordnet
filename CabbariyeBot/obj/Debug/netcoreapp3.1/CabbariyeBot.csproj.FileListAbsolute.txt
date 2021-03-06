@@ -27,8 +27,10 @@ C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\bin\Debug\netcoreapp3.1\Cabbariy
 C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\bin\Debug\netcoreapp3.1\CabbariyeBot.pdb
 C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\obj\Debug\netcoreapp3.1\CabbariyeBot.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\obj\Debug\netcoreapp3.1\CabbariyeBot.dll
 C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\obj\Debug\netcoreapp3.1\CabbariyeBot.pdb
 C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\obj\Debug\netcoreapp3.1\CabbariyeBot.genruntimeconfig.cache
 C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\bin\Debug\netcoreapp3.1\_botconfig.yml
+C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\bin\Debug\netcoreapp3.1\Victoria.dll
+C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\bin\Debug\netcoreapp3.1\Discord.Addons.Interactive.dll
+C:\Users\User\Desktop\CabbariyeBot\CabbariyeBot\obj\Debug\netcoreapp3.1\CabbariyeBot.csproj.CoreCompileInputs.cache
