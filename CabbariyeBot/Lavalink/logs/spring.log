@@ -1,286 +1,92 @@
-2021-03-06 01:53:56.885  INFO 1660 --- [XNIO-1 task-12] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:65261
-2021-03-06 01:53:57.062  INFO 1660 --- [XNIO-1 task-12] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:65261
-2021-03-06 01:59:31.009  INFO 1660 --- [XNIO-1 task-13] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:ride out"
-2021-03-06 01:59:31.173  INFO 1660 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"guildId":"782953465755598858","sessionId":"6eff122c777d98407bcf9d2c3eb97612","event":{"token":"f1b593ef85a41dd2","endpoint":"eu-central3450.discord.media:443"},"op":"voiceUpdate"}
-2021-03-06 01:59:32.142  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ride out
-2021-03-06 01:59:32.190  INFO 1660 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAAygIAYEtpZCBJbmssIFR5Z2EsIFdhbGUsIFlHLCBSaWNoIEhvbWllIFF1YW4gLSBSaWRlIE91dCAoZnJvbSBGdXJpb3VzIDcgU291bmR0cmFjaykgW09mZmljaWFsIFZpZGVvXQAQQXRsYW50aWMgUmVjb3JkcwAAAAAAA0AIAAtYN3JkZ190S3pLUQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVg3cmRnX3RLektRAAd5b3V0dWJlAAAAAAAAAAA=","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 01:59:38.397  INFO 1660 --- [XNIO-1 task-15] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:gang on"
-2021-03-06 01:59:39.077  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: gang on
-2021-03-06 01:59:44.837  INFO 1660 --- [XNIO-1 task-17] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:we rabbitz gangstas paradise"
-2021-03-06 01:59:45.653  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: we rabbitz gangstas paradise
-2021-03-06 01:59:48.239  INFO 1660 --- [XNIO-1 task-19] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:go hard or go home"
-2021-03-06 01:59:49.519  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: go hard or go home
-2021-03-06 02:01:09.471  INFO 1660 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:65261 -- CloseStatus[code=1006, reason=]
-2021-03-06 02:01:09.472  INFO 1660 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 1 playing players.
-2021-03-06 02:01:22.830  INFO 1660 --- [XNIO-1 task-21] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:65285
-2021-03-06 02:01:22.837  INFO 1660 --- [XNIO-1 task-21] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:65285
-2021-03-06 02:01:34.235  INFO 1660 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"guildId":"782953465755598858","sessionId":"a1221967e95c9ae98da1d6eefd2e7439","event":{"token":"f1b593ef85a41dd2","endpoint":"eu-central3450.discord.media:443"},"op":"voiceUpdate"}
-2021-03-06 02:01:34.409  INFO 1660 --- [XNIO-1 task-22] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:gang up"
-2021-03-06 02:01:35.005  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: gang up
-2021-03-06 02:01:35.042  INFO 1660 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAAyQIAZVlvdW5nIFRodWcsIDIgQ2hhaW56LCBXaXogS2hhbGlmYSAmIFBuQiBSb2NrIOKAkyBHYW5nIFVwIChUaGUgRmF0ZSBvZiB0aGUgRnVyaW91czogVGhlIEFsYnVtKSBbVklERU9dAApZb3VuZyBUaHVnAAAAAAADlfgAC1p2VUJHTjRLb1AwAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9WnZVQkdONEtvUDAAB3lvdXR1YmUAAAAAAAAAAA==","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:01:37.083  INFO 1660 --- [XNIO-1 task-24] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:go hard or go home"
-2021-03-06 02:01:37.801  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: go hard or go home
-2021-03-06 02:01:46.746  INFO 1660 --- [XNIO-1 task-26] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:we rabbitz gangstas paradise"
-2021-03-06 02:01:47.419  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: we rabbitz gangstas paradise
-2021-03-06 02:05:31.131  INFO 1660 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAArAIAR1dpeiBLaGFsaWZhICYgSWdneSBBemFsZWEg4oCTIEdvIEhhcmQgb3IgR28gSG9tZSBbRnVyaW91cyA3IFNvdW5kdHJhY2tdAAtXaXogS2hhbGlmYQAAAAAAA44oAAtEX1ZSU0ZwVWNwMAABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PURfVlJTRnBVY3AwAAd5b3V0dWJlAAAAAAAAAAA=","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:06:18.834  INFO 1660 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:65285 -- CloseStatus[code=1006, reason=]
-2021-03-06 02:06:18.835  INFO 1660 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 1 playing players.
-2021-03-06 02:07:42.710  INFO 1660 --- [XNIO-1 task-28] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:65380
-2021-03-06 02:07:42.715  INFO 1660 --- [XNIO-1 task-28] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:65380
-2021-03-06 02:07:48.987  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"guildId":"782953465755598858","sessionId":"b51594519274903c280116b8f3eba03a","event":{"token":"f1b593ef85a41dd2","endpoint":"eu-central3450.discord.media:443"},"op":"voiceUpdate"}
-2021-03-06 02:07:49.224  INFO 1660 --- [XNIO-1 task-29] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://open.spotify.com/playlist/38X2pTgddseQu9HpeqoLdR?si=rnJhKPtEQeuT_Uz0EyfQfw"
-2021-03-06 02:07:49.771  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:07:57.580  INFO 1660 --- [XNIO-1 task-31] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://open.spotify.com/playlist/38X2pTgddseQu9HpeqoLdR?si=rnJhKPtEQeuT_Uz0EyfQfw"
-2021-03-06 02:07:57.899  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:08:07.500  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:65380 -- CloseStatus[code=1006, reason=]
-2021-03-06 02:08:07.501  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
-2021-03-06 02:10:05.930  INFO 1660 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:65418
-2021-03-06 02:10:05.934  INFO 1660 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:65418
-2021-03-06 02:10:25.311  INFO 1660 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"guildId":"782953465755598858","sessionId":"f6dc4d86b8fb39283906a7e5312129ca","event":{"token":"907739a5a704495a","endpoint":"eu-central3450.discord.media:443"},"op":"voiceUpdate"}
-2021-03-06 02:10:35.082  INFO 1660 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://open.spotify.com/playlist/38X2pTgddseQu9HpeqoLdR?si=rnJhKPtEQeuT_Uz0EyfQfw"
-2021-03-06 02:10:35.429  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:11:07.703  INFO 1660 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:65418 -- CloseStatus[code=1006, reason=]
-2021-03-06 02:11:07.704  INFO 1660 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
-2021-03-06 02:14:06.407  INFO 1660 --- [XNIO-1 task-4] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:65474
-2021-03-06 02:14:06.411  INFO 1660 --- [XNIO-1 task-4] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:65474
-2021-03-06 02:14:38.862  INFO 1660 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"guildId":"782953465755598858","sessionId":"03a77ba55bf1a370f877f4a35a82ad7c","event":{"token":"738f46c0cb68f327","endpoint":"eu-central3450.discord.media:443"},"op":"voiceUpdate"}
-2021-03-06 02:14:40.381  INFO 1660 --- [XNIO-1 task-5] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://open.spotify.com/playlist/38X2pTgddseQu9HpeqoLdR?si=rnJhKPtEQeuT_Uz0EyfQfw"
-2021-03-06 02:14:41.011  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:14:46.528  INFO 1660 --- [XNIO-1 task-7] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://open.spotify.com/playlist/38X2pTgddseQu9HpeqoLdR?si=rnJhKPtEQeuT_Uz0EyfQfw"
-2021-03-06 02:14:48.115 ERROR 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Load failed
-
-com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Unknown file format.
-	at com.sedmelluq.discord.lavaplayer.source.ProbingAudioSourceManager.handleLoadResult(ProbingAudioSourceManager.java:35) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.source.http.HttpAudioSourceManager.loadItem(HttpAudioSourceManager.java:82) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:437) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-1.3.65.jar!/:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
-  lavaplayer.version: 1.3.65
-  os.arch: amd64
-  os.name: Windows 10
-  os.version: 10.0
-  java.vendor: Oracle Corporation
-  java.version: 15.0.2
-  java.runtime.version: 15.0.2+7-27
-  java.vm.version: 15.0.2+7-27
-
-2021-03-06 02:14:48.117 ERROR 1660 --- [lava-daemon-pool-info-loader-2-thread-1] l.server.player.AudioLoaderRestHandler   : Track loading failed
-
-com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Unknown file format.
-	at com.sedmelluq.discord.lavaplayer.source.ProbingAudioSourceManager.handleLoadResult(ProbingAudioSourceManager.java:35) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.source.http.HttpAudioSourceManager.loadItem(HttpAudioSourceManager.java:82) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:437) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-1.3.65.jar!/:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
-  lavaplayer.version: 1.3.65
-  os.arch: amd64
-  os.name: Windows 10
-  os.version: 10.0
-  java.vendor: Oracle Corporation
-  java.version: 15.0.2
-  java.runtime.version: 15.0.2+7-27
-  java.vm.version: 15.0.2+7-27
-
-2021-03-06 02:15:31.731  INFO 1660 --- [XNIO-1 task-9] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://open.spotify.com/track/6CGZO39OgHqemh8wf5oAiy?si=yjQuFCcIRsOtjT0Scbqjfg"
-2021-03-06 02:15:32.018  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:15:32.035  INFO 1660 --- [XNIO-1 task-11] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://open.spotify.com/track/6CGZO39OgHqemh8wf5oAiy?si=yjQuFCcIRsOtjT0Scbqjfg"
-2021-03-06 02:15:32.547 ERROR 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Load failed
-
-com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Unknown file format.
-	at com.sedmelluq.discord.lavaplayer.source.ProbingAudioSourceManager.handleLoadResult(ProbingAudioSourceManager.java:35) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.source.http.HttpAudioSourceManager.loadItem(HttpAudioSourceManager.java:82) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:437) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-1.3.65.jar!/:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
-  lavaplayer.version: 1.3.65
-  os.arch: amd64
-  os.name: Windows 10
-  os.version: 10.0
-  java.vendor: Oracle Corporation
-  java.version: 15.0.2
-  java.runtime.version: 15.0.2+7-27
-  java.vm.version: 15.0.2+7-27
-
-2021-03-06 02:15:32.548 ERROR 1660 --- [lava-daemon-pool-info-loader-2-thread-1] l.server.player.AudioLoaderRestHandler   : Track loading failed
-
-com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Unknown file format.
-	at com.sedmelluq.discord.lavaplayer.source.ProbingAudioSourceManager.handleLoadResult(ProbingAudioSourceManager.java:35) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.source.http.HttpAudioSourceManager.loadItem(HttpAudioSourceManager.java:82) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:437) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-1.3.65.jar!/:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
-  lavaplayer.version: 1.3.65
-  os.arch: amd64
-  os.name: Windows 10
-  os.version: 10.0
-  java.vendor: Oracle Corporation
-  java.version: 15.0.2
-  java.runtime.version: 15.0.2+7-27
-  java.vm.version: 15.0.2+7-27
-
-2021-03-06 02:16:12.870  INFO 1660 --- [XNIO-1 task-13] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://open.spotify.com/track/6CGZO39OgHqemh8wf5oAiy?si=yjQuFCcIRsOtjT0Scbqjfg"
-2021-03-06 02:16:13.103  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:16:21.893  INFO 1660 --- [XNIO-1 task-15] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://open.spotify.com/track/6CGZO39OgHqemh8wf5oAiy?si=yjQuFCcIRsOtjT0Scbqjfg"
-2021-03-06 02:16:22.334 ERROR 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Load failed
-
-com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Unknown file format.
-	at com.sedmelluq.discord.lavaplayer.source.ProbingAudioSourceManager.handleLoadResult(ProbingAudioSourceManager.java:35) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.source.http.HttpAudioSourceManager.loadItem(HttpAudioSourceManager.java:82) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:437) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-1.3.65.jar!/:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
-  lavaplayer.version: 1.3.65
-  os.arch: amd64
-  os.name: Windows 10
-  os.version: 10.0
-  java.vendor: Oracle Corporation
-  java.version: 15.0.2
-  java.runtime.version: 15.0.2+7-27
-  java.vm.version: 15.0.2+7-27
-
-2021-03-06 02:16:22.335 ERROR 1660 --- [lava-daemon-pool-info-loader-2-thread-1] l.server.player.AudioLoaderRestHandler   : Track loading failed
-
-com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Unknown file format.
-	at com.sedmelluq.discord.lavaplayer.source.ProbingAudioSourceManager.handleLoadResult(ProbingAudioSourceManager.java:35) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.source.http.HttpAudioSourceManager.loadItem(HttpAudioSourceManager.java:82) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:437) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-1.3.65.jar!/:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
-  lavaplayer.version: 1.3.65
-  os.arch: amd64
-  os.name: Windows 10
-  os.version: 10.0
-  java.vendor: Oracle Corporation
-  java.version: 15.0.2
-  java.runtime.version: 15.0.2+7-27
-  java.vm.version: 15.0.2+7-27
-
-2021-03-06 02:16:30.705  INFO 1660 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:65474 -- CloseStatus[code=1006, reason=]
-2021-03-06 02:16:30.706  INFO 1660 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
-2021-03-06 02:16:46.533  INFO 1660 --- [XNIO-1 task-17] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:65500
-2021-03-06 02:16:46.538  INFO 1660 --- [XNIO-1 task-17] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:65500
-2021-03-06 02:17:01.769  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"guildId":"782953465755598858","sessionId":"8cc197caad4681cf2d72171548a4846c","event":{"token":"738f46c0cb68f327","endpoint":"eu-central3450.discord.media:443"},"op":"voiceUpdate"}
-2021-03-06 02:17:01.905  INFO 1660 --- [XNIO-1 task-18] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://open.spotify.com/track/6CGZO39OgHqemh8wf5oAiy?si=yjQuFCcIRsOtjT0Scbqjfg"
-2021-03-06 02:17:02.169  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:17:43.139  INFO 1660 --- [XNIO-1 task-20] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:spotify:track:6CGZO39OgHqemh8wf5oAiy"
-2021-03-06 02:17:43.673  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: spotify:track:6CGZO39OgHqemh8wf5oAiy
-2021-03-06 02:17:43.699  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAArQIAPlRPUCA0MCBTb25ncyBvZiAyMDIwIDIwMjEgKEJlc3QgSGl0IE11c2ljIFBsYXlsaXN0KSBvbiBTcG90aWZ5ABVCZXN0IENvdmVyIENvbGxlY3Rpb24AAAAAADqMSAALX3BMTzRqRkRlSWMAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1fcExPNGpGRGVJYwAHeW91dHViZQAAAAAAAAAA","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:18:40.746  INFO 1660 --- [XNIO-1 task-22] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://open.spotify.com/embed/track/6CGZO39OgHqemh8wf5oAiy"
-2021-03-06 02:18:41.035  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:19:42.236  INFO 1660 --- [XNIO-1 task-24] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:spotify:track:6CGZO39OgHqemh8wf5oAiy"
-2021-03-06 02:19:42.776  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: spotify:track:6CGZO39OgHqemh8wf5oAiy
-2021-03-06 02:20:16.810  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:65500 -- CloseStatus[code=1006, reason=]
-2021-03-06 02:20:16.814  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 1 playing players.
-2021-03-06 02:20:40.645  INFO 1660 --- [XNIO-1 task-26] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:65518
-2021-03-06 02:20:40.650  INFO 1660 --- [XNIO-1 task-26] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:65518
-2021-03-06 02:20:55.933  INFO 1660 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"guildId":"782953465755598858","sessionId":"0a6bb59b727f936a3bb96f979b1ca666","event":{"token":"738f46c0cb68f327","endpoint":"eu-central3450.discord.media:443"},"op":"voiceUpdate"}
-2021-03-06 02:20:56.359  INFO 1660 --- [XNIO-1 task-27] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "spotify:track:6CGZO39OgHqemh8wf5oAiy"
-2021-03-06 02:20:56.360  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:21:18.581  INFO 1660 --- [XNIO-1 task-29] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://open.spotify.com/track/6CGZO39OgHqemh8wf5oAiy?si=sMNk8iQtSRCfbo4hRLBqAQ"
-2021-03-06 02:21:19.271 ERROR 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Load failed
-
-com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Unknown file format.
-	at com.sedmelluq.discord.lavaplayer.source.ProbingAudioSourceManager.handleLoadResult(ProbingAudioSourceManager.java:35) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.source.http.HttpAudioSourceManager.loadItem(HttpAudioSourceManager.java:82) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:437) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-1.3.65.jar!/:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
-  lavaplayer.version: 1.3.65
-  os.arch: amd64
-  os.name: Windows 10
-  os.version: 10.0
-  java.vendor: Oracle Corporation
-  java.version: 15.0.2
-  java.runtime.version: 15.0.2+7-27
-  java.vm.version: 15.0.2+7-27
-
-2021-03-06 02:21:19.273 ERROR 1660 --- [lava-daemon-pool-info-loader-2-thread-1] l.server.player.AudioLoaderRestHandler   : Track loading failed
-
-com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Unknown file format.
-	at com.sedmelluq.discord.lavaplayer.source.ProbingAudioSourceManager.handleLoadResult(ProbingAudioSourceManager.java:35) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.source.http.HttpAudioSourceManager.loadItem(HttpAudioSourceManager.java:82) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:437) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419) ~[lavaplayer-1.3.65.jar!/:na]
-	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-1.3.65.jar!/:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
-	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
-  lavaplayer.version: 1.3.65
-  os.arch: amd64
-  os.name: Windows 10
-  os.version: 10.0
-  java.vendor: Oracle Corporation
-  java.version: 15.0.2
-  java.runtime.version: 15.0.2+7-27
-  java.vm.version: 15.0.2+7-27
-
-2021-03-06 02:21:41.057  INFO 1660 --- [XNIO-1 task-31] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "hes pirate piano"
-2021-03-06 02:21:41.058  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
-2021-03-06 02:21:50.033  INFO 1660 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:65518 -- CloseStatus[code=1006, reason=]
-2021-03-06 02:21:50.038  INFO 1660 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
-2021-03-06 02:22:08.125  INFO 1660 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:65532
-2021-03-06 02:22:08.131  INFO 1660 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:65532
-2021-03-06 02:22:20.092  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"guildId":"782953465755598858","sessionId":"c7b7a6511b33c9525f3f0c031d44c85e","event":{"token":"738f46c0cb68f327","endpoint":"eu-central3450.discord.media:443"},"op":"voiceUpdate"}
-2021-03-06 02:22:23.043  INFO 1660 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:in this shirt"
-2021-03-06 02:22:23.745  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: in this shirt
-2021-03-06 02:22:24.272  INFO 1660 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:hes pirate piano"
-2021-03-06 02:22:24.763  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: hes pirate piano
-2021-03-06 02:22:34.255  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAAeQIADUluIFRoaXMgU2hpcnQAElRoZSBJcnJlcHJlc3NpYmxlcwAAAAAABRyYAAstdEowY2tYOC1XUQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PS10SjBja1g4LVdRAAd5b3V0dWJlAAAAAAAAAAA=","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:22:34.266  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAApAIAOFBpcmF0ZXMgb2YgdGhlIENhcmliYmVhbiAtIEhlJ3MgYSBQaXJhdGUgKFBpYW5vIFZlcnNpb24pABJQYXRyaWsgUGlldHNjaG1hbm4AAAAAAAK/IAALMmFCdER6ODdVSzAAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj0yYUJ0RHo4N1VLMAAHeW91dHViZQAAAAAAAAAA","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:23:15.325  INFO 1660 --- [XNIO-1 task-6] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:in this shirt"
-2021-03-06 02:23:16.208  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: in this shirt
-2021-03-06 02:23:30.598  INFO 1660 --- [XNIO-1 task-8] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:samet for men"
-2021-03-06 02:23:31.122  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: samet for men
-2021-03-06 02:24:19.956  INFO 1660 --- [XNIO-1 task-10] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:amelie piano"
-2021-03-06 02:24:20.562  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: amelie piano
-2021-03-06 02:24:23.738  INFO 1660 --- [XNIO-1 task-12] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:la campanella"
-2021-03-06 02:24:24.440  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: la campanella
-2021-03-06 02:25:10.705  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAAiAIAFVlhcmFrc3R5bGU5MSAtIFNhbWV0IQAZQk1HIExpdmUgKEx1c3RpZ2UgVmlkZW9zKQAAAAAAAlWoAAt2anVhQXpWLW56WQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PXZqdWFBelYtbnpZAAd5b3V0dWJlAAAAAAAAAAA=","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:26:05.623  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAAeQIADUluIFRoaXMgU2hpcnQAElRoZSBJcnJlcHJlc3NpYmxlcwAAAAAABRyYAAstdEowY2tYOC1XUQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PS10SjBja1g4LVdRAAd5b3V0dWJlAAAAAAAAAAA=","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:31:41.652  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAAlwIAMDQgQmVhdXRpZnVsIFNvdW5kdHJhY2tzIHwgUmVsYXhpbmcgUGlhbm8gWzEwbWluXQANSmFjb2IncyBQaWFubwAAAAAACVqIAAt0X0tkX0c3cDZaUQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PXRfS2RfRzdwNlpRAAd5b3V0dWJlAAAAAAAAAAA=","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:37:41.676  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAAiQIAJ0xpc3p0IC0gTGEgQ2FtcGFuZWxsYSAoMTAwLDAwMCBzcGVjaWFsKQAIUm91c3NlYXUAAAAAAATaMAALSDFEdmcyTXhRbjgAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1IMUR2ZzJNeFFuOAAHeW91dHViZQAAAAAAAAAA","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:37:53.610  INFO 1660 --- [XNIO-1 task-14] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:davy jones organ"
-2021-03-06 02:37:54.379  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: davy jones organ
-2021-03-06 02:43:00.527  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAAvgIAVFBpcmF0ZXMgb2YgdGhlIENhcmliYmVhbiAtIERhdnkgSm9uZXMncyB0aGVtZSBjb3ZlciBjaHVyY2ggb3JnYW4gYnkgR3Jpc3NpbmkgUHJvamVjdAAQR3Jpc3NpbmkgUHJvamVjdAAAAAAAA\u002BgAAAtELV9xU18zS1hCQQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PUQtX3FTXzNLWEJBAAd5b3V0dWJlAAAAAAAAAAA=","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:51:52.005  INFO 1660 --- [XNIO-1 task-16] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:tut þunun ucunu döþeyelim abi japonca"
-2021-03-06 02:51:52.804  INFO 1660 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: tut þunun ucunu döþeyelim abi japonca
-2021-03-06 02:51:52.812  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"endTime":0,"track":"QAAAswIATUbEsXJhdCBCb3J1IC0gRMO2xZ9leWVsaW0gQWJpIEphcG9uY2EgLSDku5jjgZHjgb7jgZfjgofjgYblhYTosrQhICjml6XmnKzoqp4pAAxDYW4ga8SxcMOnYWsAAAAAAAB5GAALeWYtU0tiYlFKSFkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj15Zi1TS2JiUUpIWQAHeW91dHViZQAAAAAAAAAA","noReplace":false,"startTime":0,"guildId":"782953465755598858","op":"play"}
-2021-03-06 02:55:07.077  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:65532 -- CloseStatus[code=1006, reason=]
-2021-03-06 02:55:07.077  INFO 1660 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:00:27.184  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52741 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:00:27.197  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:03:41.779  INFO 6060 --- [XNIO-1 task-14] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52804
+2021-04-09 00:03:41.784  INFO 6060 --- [XNIO-1 task-14] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52804
+2021-04-09 00:03:58.717  INFO 6060 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52804 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:03:58.724  INFO 6060 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:04:16.388  INFO 6060 --- [XNIO-1 task-15] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52809
+2021-04-09 00:04:16.392  INFO 6060 --- [XNIO-1 task-15] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52809
+2021-04-09 00:06:25.530  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52809 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:06:25.530  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:06:43.153  INFO 6060 --- [XNIO-1 task-16] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52817
+2021-04-09 00:06:43.158  INFO 6060 --- [XNIO-1 task-16] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52817
+2021-04-09 00:06:57.757  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52817 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:06:57.758  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:08:25.378  INFO 6060 --- [XNIO-1 task-17] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52829
+2021-04-09 00:08:25.382  INFO 6060 --- [XNIO-1 task-17] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52829
+2021-04-09 00:09:14.231  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52829 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:09:14.232  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:14:55.077  INFO 6060 --- [XNIO-1 task-18] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52865
+2021-04-09 00:14:55.081  INFO 6060 --- [XNIO-1 task-18] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52865
+2021-04-09 00:15:16.330  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52865 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:15:16.331  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:15:34.173  INFO 6060 --- [XNIO-1 task-19] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52871
+2021-04-09 00:15:34.177  INFO 6060 --- [XNIO-1 task-19] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52871
+2021-04-09 00:16:09.492  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52871 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:16:09.493  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:16:22.295  INFO 6060 --- [XNIO-1 task-20] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52875
+2021-04-09 00:16:22.299  INFO 6060 --- [XNIO-1 task-20] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52875
+2021-04-09 00:16:34.390  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52875 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:16:34.391  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:16:51.926  INFO 6060 --- [XNIO-1 task-21] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52879
+2021-04-09 00:16:51.938  INFO 6060 --- [XNIO-1 task-21] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52879
+2021-04-09 00:17:25.479  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52879 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:17:25.479  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:17:41.986  INFO 6060 --- [XNIO-1 task-22] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52885
+2021-04-09 00:17:41.991  INFO 6060 --- [XNIO-1 task-22] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52885
+2021-04-09 00:17:55.703  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52885 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:17:55.704  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:18:08.066  INFO 6060 --- [XNIO-1 task-23] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52889
+2021-04-09 00:18:08.071  INFO 6060 --- [XNIO-1 task-23] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52889
+2021-04-09 00:18:31.833  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52889 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:18:31.834  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:18:47.406  INFO 6060 --- [XNIO-1 task-24] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52893
+2021-04-09 00:18:47.410  INFO 6060 --- [XNIO-1 task-24] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52893
+2021-04-09 00:19:07.262  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52893 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:19:07.263  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:19:23.141  INFO 6060 --- [XNIO-1 task-25] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52898
+2021-04-09 00:19:23.144  INFO 6060 --- [XNIO-1 task-25] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:52898
+2021-04-09 00:23:32.780  INFO 6060 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52898 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:23:32.780  INFO 6060 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:31:45.602  INFO 6060 --- [XNIO-1 task-26] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53010
+2021-04-09 00:31:45.607  INFO 6060 --- [XNIO-1 task-26] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53010
+2021-04-09 00:32:51.490  INFO 6060 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53010 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:32:51.490  INFO 6060 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:33:07.850  INFO 6060 --- [XNIO-1 task-27] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53020
+2021-04-09 00:33:07.857  INFO 6060 --- [XNIO-1 task-27] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53020
+2021-04-09 00:34:15.886  INFO 6060 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53020 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:34:15.887  INFO 6060 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:35:07.104  INFO 6060 --- [XNIO-1 task-28] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53025
+2021-04-09 00:35:07.107  INFO 6060 --- [XNIO-1 task-28] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53025
+2021-04-09 00:36:45.574  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53025 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:36:45.574  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:37:13.629  INFO 6060 --- [XNIO-1 task-29] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53043
+2021-04-09 00:37:13.633  INFO 6060 --- [XNIO-1 task-29] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53043
+2021-04-09 00:38:25.098  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53043 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:38:25.105  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:38:40.029  INFO 6060 --- [XNIO-1 task-30] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53053
+2021-04-09 00:38:40.035  INFO 6060 --- [XNIO-1 task-30] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53053
+2021-04-09 00:45:15.379  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53053 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:45:15.382  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:46:08.998  INFO 6060 --- [XNIO-1 task-31] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53129
+2021-04-09 00:46:09.002  INFO 6060 --- [XNIO-1 task-31] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53129
+2021-04-09 00:46:29.076  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53129 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:46:29.076  INFO 6060 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:47:55.254  INFO 6060 --- [XNIO-1 task-32] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53143
+2021-04-09 00:47:55.263  INFO 6060 --- [XNIO-1 task-32] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53143
+2021-04-09 00:48:20.746  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53143 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:48:20.747  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:50:34.367  INFO 6060 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53152
+2021-04-09 00:50:34.375  INFO 6060 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53152
+2021-04-09 00:51:14.573  INFO 6060 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53152 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:51:14.574  INFO 6060 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:52:55.971  INFO 6060 --- [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53175
+2021-04-09 00:52:55.978  INFO 6060 --- [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53175
+2021-04-09 00:53:17.943  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53175 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:53:17.944  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:53:29.377  INFO 6060 --- [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53183
+2021-04-09 00:53:29.381  INFO 6060 --- [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53183
+2021-04-09 00:56:36.127  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:53183 -- CloseStatus[code=1006, reason=]
+2021-04-09 00:56:36.128  INFO 6060 --- [XNIO-1 I/O-3] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-04-09 00:56:52.437  INFO 6060 --- [XNIO-1 task-4] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53194
+2021-04-09 00:56:52.443  INFO 6060 --- [XNIO-1 task-4] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:53194

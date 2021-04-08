@@ -23,7 +23,11 @@ namespace CabbariyeBot.Modules
             _lavaNode = lavaNode;
         }
 
-        [Command("baglan")]
+        public static bool CheckURLValid(string source) => Uri.TryCreate(source, UriKind.Absolute, out Uri uriResult) && uriResult.Scheme == Uri.UriSchemeHttps;
+
+        public static List<LavaTrack> queue = new List<LavaTrack>();
+
+        [Command("baglan", RunMode = RunMode.Async)]
         public async Task JoinAsync()
         {
             if (_lavaNode.HasPlayer(Context.Guild))
@@ -42,7 +46,6 @@ namespace CabbariyeBot.Modules
             try
             {
                 await _lavaNode.JoinAsync(voiceState.VoiceChannel, Context.Channel as ITextChannel);
-                await ReplyAsync($"{voiceState.VoiceChannel.Name} kanalına katıldım!");
             }
             catch (Exception exception)
             {
@@ -50,13 +53,27 @@ namespace CabbariyeBot.Modules
             }
         }
 
-        public static bool CheckURLValid(string source) => Uri.TryCreate(source, UriKind.Absolute, out Uri uriResult) && uriResult.Scheme == Uri.UriSchemeHttps;
-
-
-        [Command("oynat")]
+        [Command("oynat",RunMode= RunMode.Async)]
         public async Task PlayAsync([Remainder] string query)
         {
-            
+
+            var voiceState = Context.User as IVoiceState;
+            if (voiceState?.VoiceChannel == null)
+            {
+                await ReplyAsync("Bir Ses Kanalına Bağlı Olmak Zorundasınız!");
+                return;
+            }
+            if (!_lavaNode.HasPlayer(Context.Guild))
+            {
+                await _lavaNode.JoinAsync(voiceState.VoiceChannel, Context.Channel as ITextChannel);
+            }
+
+            var player = _lavaNode.GetPlayer(Context.Guild);
+            if (voiceState.VoiceChannel != player.VoiceChannel)
+            {
+                await ReplyAsync("Benimle Aynı Ses Kanalında Bulunman Gerekiyor!");
+                return;
+            }
 
             if (string.IsNullOrWhiteSpace(query))
             {
@@ -66,7 +83,6 @@ namespace CabbariyeBot.Modules
 
             if (!_lavaNode.HasPlayer(Context.Guild))
             {
-                var voiceState = Context.User as IVoiceState;
                 await _lavaNode.JoinAsync(voiceState.VoiceChannel, Context.Channel as ITextChannel);
                 await ReplyAsync($"{voiceState.VoiceChannel.Name} kanalına katıldım!");
             }
@@ -85,7 +101,6 @@ namespace CabbariyeBot.Modules
                 return;
             }
 
-            var player = _lavaNode.GetPlayer(Context.Guild);
 
             if (player.PlayerState == PlayerState.Playing || player.PlayerState == PlayerState.Paused)
             {
@@ -120,25 +135,28 @@ namespace CabbariyeBot.Modules
             }
 
         }
-        [Command("loop")]
-        public async Task LoopTrackAsync()
-        {
-            bool isLoop = false;
-            var player = _lavaNode.GetPlayer(Context.Guild);
-            var queue = player.Queue.ToList();
-            var queueCount = player.Queue.Count;
-            if(queueCount == 0)
-            {
-                await Context.Channel.SendMessageAsync("Tekrarlanıcak herhangi bir parça yok!");
-                return;
-            }
-            var loopTrack = player.Queue.FirstOrDefault();
-        }
 
-        [Command("karistir")]
+        [Command("karistir", RunMode = RunMode.Async)]
         public async Task ShuffleTrackAsync()
         {
+            var voiceState = Context.User as IVoiceState;
+            if (voiceState?.VoiceChannel == null)
+            {
+                await ReplyAsync("Bir Ses Kanalına Bağlı Olmak Zorundasınız!");
+                return;
+            }
+            if (!_lavaNode.HasPlayer(Context.Guild))
+            {
+                await ReplyAsync("Bir Ses Kanalına Bağlı Değilim!");
+                return;
+            }
+
             var player = _lavaNode.GetPlayer(Context.Guild);
+            if (voiceState.VoiceChannel != player.VoiceChannel)
+            {
+                await ReplyAsync("Benimle Aynı Ses Kanalında Bulunman Gerekiyor!");
+                return;
+            }
             var queue = player.Queue.ToList();
             var queueCount = player.Queue.Count;
 
@@ -147,7 +165,7 @@ namespace CabbariyeBot.Modules
                 await Context.Channel.SendMessageAsync("Kuyrukta herhangi bir parça yok!");
                 return;
             }
-            else if(queueCount == 1)
+            else if (queueCount == 1)
             {
                 await Context.Channel.SendMessageAsync("Kuyrukta bir parça olduğundan karıştıramıyorum!");
                 return;
@@ -160,7 +178,7 @@ namespace CabbariyeBot.Modules
             }
         }
 
-        [Command("duraklat")]
+        [Command("duraklat", RunMode = RunMode.Async)]
         public async Task PauseMusicAsync()
         {
             var voiceState = Context.User as IVoiceState;
@@ -191,13 +209,29 @@ namespace CabbariyeBot.Modules
             await ReplyAsync("Parça Durduruldu");
         }
 
-        [Command("kuyruk")]
+        [Command("kuyruk", RunMode = RunMode.Async)]
         public async Task QueueList()
         {
+            var voiceState = Context.User as IVoiceState;
+            if (voiceState?.VoiceChannel == null)
+            {
+                await ReplyAsync("Bir Ses Kanalına Bağlı Olmak Zorundasınız!");
+                return;
+            }
+            if (!_lavaNode.HasPlayer(Context.Guild))
+            {
+                await ReplyAsync("Bir Ses Kanalına Bağlı Değilim!");
+                return;
+            }
 
-            var trackTitles = new List<Tuple<int,string>>();
             var player = _lavaNode.GetPlayer(Context.Guild);
-            var queue = player.Queue.ToList();
+            if (voiceState.VoiceChannel != player.VoiceChannel)
+            {
+                await ReplyAsync("Benimle Aynı Ses Kanalında Bulunman Gerekiyor!");
+                return;
+            }
+            var trackTitles = new List<Tuple<int, string>>();
+            queue = player.Queue.ToList();
             var queueCount = player.Queue.Count;
 
             if (queueCount == 0)
@@ -209,7 +243,7 @@ namespace CabbariyeBot.Modules
             foreach (var track in queue)
             {
 
-                trackTitles.Add(new Tuple<int,string>(pos,track.Title));
+                trackTitles.Add(new Tuple<int, string>(pos, track.Title));
                 pos = pos + 1;
             }
             var builder = new EmbedBuilder()
@@ -223,8 +257,8 @@ namespace CabbariyeBot.Modules
 
         }
 
-        [Command("atla")]
-        public async Task SkipMusicAsync()
+        [Command("atla", RunMode = RunMode.Async)]
+        public async Task SkipMusicAsync(int amount = 1)
         {
             var voiceState = Context.User as IVoiceState;
             if (voiceState?.VoiceChannel == null)
@@ -245,11 +279,15 @@ namespace CabbariyeBot.Modules
                 return;
             }
 
-            await player.SkipAsync();
+            for(int i = 0; i < amount; i++)
+            {
+                await player.SkipAsync();
+            }
+            
             await ReplyAsync("Parça Atlandı!");
         }
 
-        [Command("devam-et")]
+        [Command("devam-et", RunMode = RunMode.Async)]
         public async Task ResumeMusicAsync()
         {
             var voiceState = Context.User as IVoiceState;
@@ -284,7 +322,7 @@ namespace CabbariyeBot.Modules
 
         }
 
-        [Command("siktir-git")]
+        [Command("siktir-git", RunMode = RunMode.Async)]
         public async Task SiktirGitAsync(IVoiceChannel channel = null)
         {
             var voiceState = Context.User as IVoiceState;
@@ -311,8 +349,8 @@ namespace CabbariyeBot.Modules
 
         }
 
-        [Command("durdur")]
-        public async Task StopMusicAsync()
+        [Command("durdur", RunMode = RunMode.Async)]
+        public async Task StopTrackAsync()
         {
             var voiceState = Context.User as IVoiceState;
             if (voiceState?.VoiceChannel == null)
@@ -342,5 +380,85 @@ namespace CabbariyeBot.Modules
             await ReplyAsync("Parça Kapatıldı!");
         }
 
+        [Command("yer-degistir", RunMode = RunMode.Async)]
+        [Summary("kuyruk degistir")]
+        public async Task TrackMoveAsync(int toBeChanged, int modified)
+        {
+            var voiceState = Context.User as IVoiceState;
+            if (voiceState?.VoiceChannel == null)
+            {
+                await ReplyAsync("Bir Ses Kanalına Bağlı Olmak Zorundasınız!");
+                return;
+            }
+            if (!_lavaNode.HasPlayer(Context.Guild))
+            {
+                await ReplyAsync("Bir Ses Kanalına Bağlı Değilim!");
+                return;
+            }
+
+            var player = _lavaNode.GetPlayer(Context.Guild);
+            if (voiceState.VoiceChannel != player.VoiceChannel)
+            {
+                await ReplyAsync("Benimle Aynı Ses Kanalında Bulunman Gerekiyor!");
+                return;
+            }
+
+            List<LavaTrack> queue = player.Queue.ToList();
+            var queueCount = player.Queue.Count;
+            if (queueCount < 2)
+            {
+                await Context.Channel.SendMessageAsync("Yerlerini değiştirebiliceğim parçalar bulunmamakta!");
+                return;
+            }
+            var oldQueue = queue[toBeChanged - 1];
+            queue[toBeChanged - 1] = queue[modified - 1];
+            queue[modified - 1] = oldQueue;
+
+            player.Queue.RemoveRange(0, queueCount);
+
+
+            foreach (var track in queue)
+            {
+                player.Queue.Enqueue(track);
+            }
+
+            await Context.Channel.SendMessageAsync($"{oldQueue.Title} {modified}. Sıraya Taşındı!");
+        }
+
+        [Command("parca-sil",RunMode = RunMode.Async)]
+        [Summary("kuyruktan-sil")]
+        public async Task DeleteTrackFromQueueAynsc(int toBeDeleted)
+        {
+            var voiceState = Context.User as IVoiceState;
+            if (voiceState?.VoiceChannel == null)
+            {
+                await ReplyAsync("Bir Ses Kanalına Bağlı Olmak Zorundasınız!");
+                return;
+            }
+            if (!_lavaNode.HasPlayer(Context.Guild))
+            {
+                await ReplyAsync("Bir Ses Kanalına Bağlı Değilim!");
+                return;
+            }
+
+            var player = _lavaNode.GetPlayer(Context.Guild);
+            if (voiceState.VoiceChannel != player.VoiceChannel)
+            {
+                await ReplyAsync("Benimle Aynı Ses Kanalında Bulunman Gerekiyor!");
+                return;
+            }
+
+            List<LavaTrack> queue = player.Queue.ToList();
+            var queueCount = player.Queue.Count;
+            if (queueCount < 1)
+            {
+                await Context.Channel.SendMessageAsync("Kuyrukta Silebiliceğim bir parça yok!");
+                return;
+            }
+            var tobedeletedtrack = queue[toBeDeleted - 1];
+            await Context.Channel.SendMessageAsync($"{tobedeletedtrack.Title} Kuyruktan Silindi!");
+            player.Queue.Remove(tobedeletedtrack);
+
+        }
     }
 }

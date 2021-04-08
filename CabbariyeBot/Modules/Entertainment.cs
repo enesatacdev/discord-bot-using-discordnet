@@ -1,13 +1,19 @@
 ﻿using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
+using static CabbariyeBot.Helpers.WikipediaSeach;
 
 namespace CabbariyeBot.Modules
 {
@@ -37,7 +43,7 @@ namespace CabbariyeBot.Modules
                 .WithDescription($"{timer} saniye sonra sizi uyarmamı istemiştiniz :)")
                 .AddField("Kullanıcı Adı", (Context.User as SocketGuildUser).Mention.ToString(), true)
                 .AddField("Hatırlatıcı Süresi", timer + " Saniye", true)
-                .AddField($"Bu Mesaj Kendini {timer} Saniye İçerisinde Yokedicek!",true)
+                .AddField($"Bu Mesaj Kendini {timer} Saniye İçerisinde Yokedicek!", true)
                 .WithColor(new Color(33, 176, 252))
                 .WithCurrentTimestamp();
             var embed = builder.Build();
@@ -72,7 +78,34 @@ namespace CabbariyeBot.Modules
                 var embed = builder.Build();
                 await Context.Channel.SendMessageAsync(null, false, embed);
             }
-           
+
+        }
+
+        [Command("wikipedia",RunMode = RunMode.Async)]
+        public async Task SearchFromWikipediaAsync([Remainder]string wikisearch = "kedi")
+        {
+            var client = new HttpClient();
+            var json = await client.GetStringAsync($"https://tr.wikipedia.org/w/api.php?format=json&action=query&prop=extracts|pageimages&exintro&explaintext&titles={wikisearch}");
+            var myPages = JsonConvert.DeserializeObject<Root>(json);
+            var first = myPages.Query.Pages.Values.First();
+            var title = first.Title;
+            string thumbnail = first.Thumbnail.source;
+            var extract = first.Extract.Substring(0,500) + "...";
+
+            var builder = new EmbedBuilder()
+               .WithColor(new Color(33, 176, 255))
+               .WithThumbnailUrl(thumbnail)
+               .AddField("Wikipedia'da Aranan",wikisearch,false)
+               .AddField("Wikipedia'da Bulunan",title,false)
+               .AddField($"{title} ile İlgili Bilgiler",extract,false)
+               .AddField("Wikipedia Linki", $"[https://tr.wikipedia.org/wiki/{title}](https://tr.wikipedia.org/wiki/{title})",false)
+               .WithAuthor(Context.Client.CurrentUser)
+               .WithFooter(footer => footer.Text = "Cebbariye Bot")
+               .WithCurrentTimestamp()
+               .Build();
+            await ReplyAsync(embed: builder);
+
+
         }
     }
 }

@@ -11,6 +11,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0-preview.1.21102.12" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0-preview.1.21102.12" />
     <PackageReference Include="NetEscapades.Configuration.Yaml" Version="2.1.0" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+    <PackageReference Include="Unirest-API" Version="1.0.7.6" />
     <PackageReference Include="Victoria" Version="5.1.11" />
   </ItemGroup>
 
@@ -18,6 +20,10 @@
     <None Update="_botconfig.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Modules\WeatherModule\" />
   </ItemGroup>
 
 </Project>
